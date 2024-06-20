@@ -1,0 +1,70 @@
+/* src/app/home/home.component.css */
+
+/* Search Bar */
+.search-bar {
+  margin-bottom: 20px;
+}
+
+/* Tags Bar */
+.tags-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center; /* Center tags horizontally */
+  margin-bottom: 20px;
+}
+
+.tag {
+  padding: 8px 12px; /* Increased padding */
+  background-color: #3498db; /* Blue background */
+  color: #fff; /* White text color */
+  border-radius: 20px; /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.tag:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+/* Product List */
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px; /* Increased gap between products */
+}
+
+.product {
+  cursor: pointer;
+  width: calc(33.33% - 30px); /* Adjusted width and gap */
+}
+
+.product img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Drop shadow */
+  transition: transform 0.3s;
+}
+
+.product:hover img {
+  transform: scale(1.05); /* Zoom effect on hover */
+}
+
+.product-details {
+  padding: 15px; /* Increased padding */
+}
+
+.price {
+  font-weight: bold;
+  color: #e74c3c; /* Red price */
+}
+
+.rating span {
+  color: #f1c40f; /* Yellow rating */
+}
+
+.favorite {
+  color: #e74c3c;
+  font-weight: bold;
+}

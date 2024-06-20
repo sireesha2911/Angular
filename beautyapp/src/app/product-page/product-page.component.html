@@ -1,0 +1,19 @@
+<!-- product-page.component.html -->
+<div class="product-details" *ngIf="product">
+  <div class="product-image">
+    <img [src]="product.imageUrl" alt="{{ product.name }}">
+  </div>
+  <div class="product-info">
+    <h2>{{ product.name }}</h2>
+    <p class="price">Price: ${{ product.price }}</p>
+    <div class="rating">
+      <span *ngFor="let _ of getRatingArray(product.rating)">&#9733;</span>
+    </div>
+    <button (click)="addToCart()">Add to Cart</button>
+    <button (click)="continueShopping()">Continue Shopping</button>
+  </div>
+</div>
+
+<div *ngIf="!product">
+  <p>No product found</p>
+</div>

@@ -1,0 +1,38 @@
+/* footer.component.css */
+
+/* Styling for the footer container */
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333; /* Add your desired background color */
+    color: #fff; /* Text color */
+    margin-bottom: 20px;
+  }
+  
+  /* Styling for the left section (logo) */
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .left-section img {
+    max-height: 50px; /* Adjust according to your logo size */
+  }
+  
+  /* Styling for the right section (login, dashboard, cart links) */
+  .right-section {
+    display: flex;
+  }
+  
+  .right-section a {
+    margin-left: 20px; /* Adjust spacing between links */
+    color: #fff; /* Text color */
+    text-decoration: none; /* Remove underline */
+  }
+  
+  .right-section a:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  

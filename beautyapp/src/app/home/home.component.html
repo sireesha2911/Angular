@@ -1,0 +1,27 @@
+<!-- src/app/home/home.component.html -->
+<app-footer [cartItemCount]="cartItemCount"></app-footer>
+<div class="search-bar">
+  <app-search-bar (searchQuery)="onSearch($event)"></app-search-bar>
+</div>
+
+<!-- Tags Bar -->
+<div class="tags-bar">
+  <span *ngFor="let tag of allTags" class="tag" (click)="onTagClick(tag)">{{ tag }}</span>
+</div>
+
+<!-- Product List -->
+<div class="product-list">
+  <div class="product" *ngFor="let product of filteredProducts" (click)="onProductClick(product)">
+    <img [src]="product.imageUrl" alt="{{ product.name }}" />
+    <div class="product-details">
+      <h3>{{ product.name }}</h3>
+      <p class="price">${{ product.price }}</p>
+      <div class="rating">
+        <span *ngFor="let _ of getRatingArray(product.rating)">&#9733;</span>
+      </div>
+      <p class="tags">Tags: {{ product.tags.join(', ') }}</p>
+      <p *ngIf="product.favorite" class="favorite">★ Favorite</p>
+    </div>
+  </div>
+</div>
+

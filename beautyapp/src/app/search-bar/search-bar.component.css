@@ -1,0 +1,35 @@
+/* src/app/search-bar/search-bar.component.css */
+
+.search-bar {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    margin-bottom: 20px; /* Add space between search bar and product list */
+    
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #ff4081; /* Vibrant accent color */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #d81b60; /* Darker shade on hover */
+  }
+  .search-bar-container {
+    display: flex;
+    justify-content:center; /* Center horizontally */
+ /* Add space between search bar and product list */
+  }
